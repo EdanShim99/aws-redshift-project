@@ -1,8 +1,8 @@
-# AWS ELT Pipeline – S3 + Redshift Serverless
+# MWAA Orchestrated AWS ELT Pipeline – S3 + Redshift Serverless
 
 ## Overview
 
-This project implements an end-to-end ELT pipeline on AWS using S3 and Redshift Serverless.  
+This project implements an end-to-end ELT pipeline on AWS using S3 and Redshift Serverless, and orchestrated by Airflow (MWAA).
 
 Data is ingested from a public API, stored in an S3-based bronze layer, transformed into structured warehouse tables using Redshift, and aggregated into analytical gold-layer tables.
 
@@ -23,6 +23,7 @@ Redshift Gold (aggregated analytical tables)
 
 
 ## Technologies Used
+- Apache Airflow (MWAA)
 - AWS S3
 - AWS Redshift Serverless
 - AWS IAM
