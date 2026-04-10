@@ -45,7 +45,7 @@ Redshift Gold (aggregated analytical tables)
 - Incremental upserts using MERGE
 - Latest-record-wins logic
 
-![Silver Table](assets/silver.jpg)
+![Silver Table](assets/silver.png)
 
 ### Gold Layer
 - Aggregated analytical tables:
@@ -53,4 +53,4 @@ Redshift Gold (aggregated analytical tables)
   - Users by department
   - Users by role
 
-![Gold Table](assets/gold.jpg)
+![Gold Table](assets/gold.png)
