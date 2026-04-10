@@ -9,17 +9,7 @@ Data is ingested from a public API, stored in an S3-based bronze layer, transfor
 The pipeline demonstrates incremental ingestion, idempotent upserts, layered data modeling, and cloud-native warehouse design.
 
 ## Architecture
-DummyJSON API
-↓
-Python Ingestion (boto3 + requests)
-↓
-S3 Bronze (append-only, partitioned by ingestion_date)
-↓
-Redshift Bronze (raw structured load)
-↓
-Redshift Silver (MERGE + deduplication)
-↓
-Redshift Gold (aggregated analytical tables)
+![Flowchart](assets/flowchart.png)
 
 
 ## Technologies Used
